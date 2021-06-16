@@ -1,9 +1,9 @@
 import React from 'react';
-import './BackDrop.css'
+import './BackDrop.css';
 
-const BackDrop = () => {
-    return (
-        <div>
+const BackDrop = ({show, click}) => {
+    return show && (
+        <div className='backdrop' onClick={click}>
             
         </div>
     );
